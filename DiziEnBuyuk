@@ -1,0 +1,19 @@
+using System;
+
+namespace DiziEnBuyuk
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int enbuyuk = 0;
+            int[] sayilar = new int[] {55,44,6,28,8,16,22,4,34};
+            foreach (int item in sayilar)
+            {
+                enbuyuk = item > enbuyuk ? enbuyuk = item : enbuyuk;
+            }
+            Console.WriteLine("En büyük Sayı : {0}", enbuyuk);
+            Console.ReadLine();
+        }
+    }
+}
